@@ -7,4 +7,4 @@ final documents = [
 ];
 
 final imageUrl =
-    'https://lh3.googleusercontent.com/ogw/ADGmqu-pInf4J76ePTIXTmYm4HPmJiur9eL_hvZf2lQcvA=s192-c-mo';
+    'https://media-exp1.licdn.com/dms/image/C4E0BAQGE244-Y7aXhw/company-logo_200_200/0/1519895049833?e=2159024400&v=beta&t=6Qwqh3QJxxqp7Blh82o0yyjI0HO3B7kzMQKqwNZh1bU';

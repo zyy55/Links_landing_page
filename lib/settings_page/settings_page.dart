@@ -19,8 +19,15 @@ class SettingsPage extends StatelessWidget {
           )
         ],
       ),
-      body: Row(
-        children: [ButtonSettingsSection(), PreviewSection()],
+      body: Container(
+        child: LayoutBuilder(
+          builder: (context, size) {
+            return Row(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: [ButtonSettingsSection(), PreviewSection()],
+            );
+          },
+        ),
       ),
     );
   }

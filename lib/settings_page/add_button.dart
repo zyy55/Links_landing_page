@@ -62,18 +62,19 @@ class AddButton extends StatelessWidget {
                 ),
                 actions: [
                   FlatButton(
-                      onPressed: () {
-                        if (_formkey.currentState.validate()) {
-                          //before without provider we was using FirebaseFirestore.instance.collection('links').add
-                          _linksCollection.add(LinkData(
-                            title: _titleTextController.text,
-                            url: _urlTextController.text,
-                          ).toMap());
-                          Navigator.of(context).pop();
-                          _formkey.currentState.reset();
-                        }
-                      },
-                      child: Text('Add')),
+                    onPressed: () {
+                      if (_formkey.currentState.validate()) {
+                        //before without provider we was using FirebaseFirestore.instance.collection('links').add
+                        _linksCollection.add(LinkData(
+                          title: _titleTextController.text,
+                          url: _urlTextController.text,
+                        ).toMap());
+                        Navigator.of(context).pop();
+                        _formkey.currentState.reset();
+                      }
+                    },
+                    child: Text('Add'),
+                  ),
                   FlatButton(
                       onPressed: () {
                         Navigator.of(context).pop();

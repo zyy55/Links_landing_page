@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_app_1/login_page/login_page.dart';
 import 'package:flutter_app_1/settings_page/settings_page.dart';
 import 'package:provider/provider.dart';
+
 import 'links_landing_page/links_landing_page.dart';
 import 'models/link_data.dart';
 import 'not_found_page.dart';
@@ -56,7 +57,7 @@ class MyApp extends StatelessWidget {
           primarySwatch: Colors.blue,
           visualDensity: VisualDensity.adaptivePlatformDensity,
         ),
-        initialRoute: '/',
+        initialRoute: '/login',
         onGenerateRoute: (settings) {
           // print(settings.name);
           return MaterialPageRoute(
